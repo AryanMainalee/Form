@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hatran&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="image">
+            <img src="background.jpg" alt="background image">
+        </div>
+        <div class="form" onsubmit="check()">
+            <form method="post">
+                <div class="wrapper">
+                    <h2>Welcome to Sign Up</h2>
+                    <p><strong>Come on and create an account</strong></p>
+                </div>
+
+                <div class="wrapper">
+                    <label for="fname">Full name</label><br>
+                    <input type="text" name="fname" id="fname" class="txt">
+                </div>
+
+                <div class="wrapper">
+                    <label for="uname">User name</label><br>
+                    <input type="text" name="uname" id="uname" class="txt">
+                </div>
+
+                <div class="wrapper">
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email" class="txt">
+                </div>
+
+                <div class="wrapper">
+                    <label for="pass">Password</label><br>
+                    <input type="password" name="pass" id="pass" class="txt">
+                </div>
+
+                <div class="wrapper">
+                    <label for="c_pass">Confirm password</label><br>
+                    <input type="password" name="c_pass" id="c_pass" class="txt">
+                </div>
+
+                <div class="wrapper">
+                    <p><input type="checkbox" name="agreement" id="aggreement" required>I agree with website's <a href="#">term and conditions.</a></p>
+                
+                </div>
+
+                <div class="wrapper">
+                    <input type="submit" value="Submit" class="submit">
+                </div>
+
+                <div class="wrapper">
+                    <center><p>Already a member? <a href="#">Sign in</a></p></center>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="form.js" defer></script>
+</body>
+</html>
